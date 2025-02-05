@@ -22,8 +22,8 @@ export default function HeroSection() {
 
   useEffect(() => {
     const slider = sliderRef.current;
-    let scrollAmount = 0;
-    const speed = 2;
+    let scrollAmount = 5;
+    const speed = 0.6;
 
     const scrollImages = () => {
       if (slider) {
@@ -62,8 +62,8 @@ export default function HeroSection() {
           />
         ))}
       </div>
-      <div className="absolute h-32 top-4 left-4">
-        <img src="https://res.cloudinary.com/dbnticsz8/image/upload/v1738726832/febTech/Nifa/vutjx29bo0yr4lbtnijl.png" alt="" className="h-full"/>
+      <div className="absolute h-40 top-4 left-4">
+        <img src="https://res.cloudinary.com/dbnticsz8/image/upload/v1738726832/febTech/Nifa/vutjx29bo0yr4lbtnijl.png" alt="logo" className="h-full"/>
       </div>
       <div className="absolute inset-0 bg-black bg-opacity-25 flex flex-col items-center justify-center p-4 text-center">
   <div className="w-3/4 bg-white/35 lg:bg-white/10 backdrop-blur-lg border border-white/20 rounded-lg shadow-lg p-6">
@@ -80,12 +80,20 @@ export default function HeroSection() {
 </div>
 
       </div>
+    
+    
+    
+    
+    
+    
+    
+    
       <div
         className="absolute bottom-0 right-7 h-24 w-24 bg-[#f48504] rounded-full flex justify-center items-center animate-bounce hover:cursor-pointer"
         onClick={() => setShowContact(true)}
       >
-        <span className="h-16 w-16">
-          <img src={contact_icon} alt="Contact Icon" className="h-full w-full font-black" />
+        <span className="h-16 w-16 shadow-2xl">
+          <img src={contact_icon} alt="Contact Icon" className="h-full w-full font-black  " />
         </span>
       </div>
 

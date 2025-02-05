@@ -21,7 +21,7 @@ const sendContactUsEmail = async (req, res) => {
     // Define email content
     const mailOptions = {
       from: process.env.EMAIL_USER, // Sender email address
-      to: "amarjha.tech@gmail.com", // Recipient email address
+      to: "nandanifebtech@gmail.com", // Recipient email address
       subject: `Contact Us Query: ${subject}`,
       text: `
         You have received a new message from the Contact Us form:
